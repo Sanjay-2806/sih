@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* App.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.responsive-table th {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.fast-row {
+  background-color: #ffe5e5;
+  color: #b30000;
+  font-weight: bold;
+}
+
+.slow-row {
+  background-color: #e5ffe5;
+  color: #006600;
+}
+
+@media (max-width: 600px) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.very-slow-row {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.slow-row {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.fast-row {
+  background-color: #ffebee;
+  color: #c62828;
+}
